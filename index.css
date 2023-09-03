@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#h {
+
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 17, 35, 0.8);
+    color: whitesmoke;
+    font-size: 25px;
+    overflow: hidden;
+    position: fixed;
+    font-family: "Jost";
+
+}
+
+#q {
+    color: gold/*#A70D2A*/;
+    font-family: 'Jost';
+    font-size: 75px;
+}
+
+#f {
+    padding: 14px;
+    text-align: center;
+    background: rgba(25, 26, 48, 0.5);
+    color: whitesmoke;
+    font-size: 19px;
+    font-family: "Jost";
+}
+
+body {
+    display: flexbox;
+    background-image: url("D2.jpg");
+    background-color: rgba(0,0, 0, 0.65);
+    background-size: cover;
+    background-blend-mode: color-burn;
+    /*background-color: rgb(25, 26, 46);*/
+    color: white;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: black,
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.2rem;
+}
+
+main hr {
+    border: 0;
+    background: #f8f8ff;
+    height: 8.5px;
+    margin: 200px 100px;
+}
+
+.left {
+    font-size: 30px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px  0;
+
+}
+
+.firstSection>div {
+    width: 400px;
+    padding: 20px;
+}
+
+.leftSection {
+    font-size: 30px;
+}
+
+
+.rightSection img {
+    width: 350px;
+
+}
+
+.purple {
+    font-size: 50px;
+    color: goldenrod
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+
+    color:  cyan;
+    font-size: 30px;
+    font-family: Jost;
+    font-style: italic;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 77vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+
+
+
+button {
+    font-family: Jost;
+    font-size: large;
+    display: inline-block;
+    margin: 80px 50px;
+    border-radius: 50px;
+    border: 4px solid rgb(255, 255, 1);
+    background-color: cyan;
+    text-decoration:none;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+
+.slide-top {animation:slide-top 2s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both}
+@keyframes slide-top{0%{transform:translateX(0)}100%{transform:translateX(50px)}}
+
+.div1 {
+    border: 5px solid wheat;
+    padding: 32px;
+}
+
+.div2 {
+    border:5px solid limegreen;
+    padding: 32px;
+    font-size: 20px;
+}
+
+.image-top {
+    height: auto;
+    width:auto;
+}
+
