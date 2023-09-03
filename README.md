@@ -1,2 +1,2 @@
 # tGC
-Lord AJ's Portfolio
+Ayush Jha's ProtoType Portfolio - I
