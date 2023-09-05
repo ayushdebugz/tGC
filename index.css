@@ -39,7 +39,7 @@ html{
 
 body {
     display: flexbox;
-    background-image: url("D2.jpg");
+    background-image: url("D.jpg");
     background-color: rgba(0,0, 0, 0.65);
     background-size: cover;
     background-blend-mode: color-burn;
