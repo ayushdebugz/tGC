@@ -216,7 +216,7 @@ button {
 .container {
     display: inline-flexbox;
     background-color: rgb(70, 74, 77,0.5);
-    height: 125vh;
+    height: 180vh;
     justify-content: center;
    align-items: center;
 
