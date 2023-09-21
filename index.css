@@ -4,7 +4,8 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+
 }
 
 .tracking-in-expand-fwd{animation:tracking-in-expand-fwd 2s cubic-bezier(.215,.61,.355,1.000) infinite alternate-reverse both}
@@ -20,14 +21,15 @@ a {
 
     text-align: center;
     top: 0;
+    padding: 25px;
     left: 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
-    font-size: 26px;
-    overflow: visible;
     position: fixed;
     font-family: "Jost";
+    z-index: 1;
+    font-size: 10px;
 
 }
 
@@ -35,7 +37,7 @@ a {
     color: gold/*#A70D2A*/;
     font-family: 'Jost';
     text-align: center;
-    overflow: hidden;
+
     cursor: pointer;
     font-size: 60px;
 }
@@ -48,6 +50,7 @@ a {
     font-size: 19px;
     font-family: "Jost";
 }
+
 
 body {
     display: flexbox;
@@ -67,9 +70,11 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
-    background-color: black,
-    
+    height: 50px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+
 }
 
 nav ul {
@@ -79,12 +84,12 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+    margin: 0 38px;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 31px;
     color: white
 }
 
@@ -124,6 +129,8 @@ main hr {
 
 .rightSection img {
     width: 350px;
+    position:relative;
+    overflow: visible;
 
 }
 
@@ -201,15 +208,15 @@ button {
     text-align: center;
 }
 
-.image-top {
+/*.image-top {
     height: auto;
     width:auto;
-}
+}*/
 
 .container {
     display: inline-flexbox;
     background-color: rgb(70, 74, 77,0.5);
-    height: 600vh;
+    height: 125vh;
     justify-content: center;
    align-items: center;
 
@@ -218,21 +225,21 @@ button {
 img{
     width: 100%;
     height: auto;
-    filter: brightness(60%);
-    overflow: hidden;
+    filter: brightness(65%);
     border-radius: 5px;
+    position: relative;
   }
   
   .card {
   
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(76, 234, 165, 0.9);
+    background-color: rgba(255, 0, 0, 0.26);
     height: auto;
     width: auto;
     transition: 0.1s;
     margin: 32px 25px;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 0px;
+
 
   }
 
@@ -240,26 +247,26 @@ img{
   .card1{
   
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(234, 134, 72, 0.9);
+    background-color: rgba(132, 0, 255, 0.2);
     height: auto;
     width: auto;
     transition: 0.1s;
     margin: 32px 25px;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 0px;
+
 
   }
 
   .card2{
   
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(72, 142, 234, 0.9);
+    background-color: rgba(72, 142, 234, 0.5);
     height: auto;
     width: auto;
     transition: 0.1s;
     margin: 32px 25px;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 0px;
+   
 
   }
 
@@ -267,17 +274,17 @@ img{
   
   .card:hover {
   
-    box-shadow: 0 8px 16px 0 rgb(0, 255, 47);
+    box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
   }
 
   .card1:hover {
   
-    box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
+    box-shadow: 0 8px 16px 0 rgb(yellow);
   }
 
   .card2:hover {
   
-    box-shadow: 0 8px 16px 0 rgb(0, 174, 255);
+    box-shadow: 0 8px 16px 0 rgb(limegreen);
   }
 
   .card3{
@@ -285,10 +292,11 @@ img{
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
     background-color: rgba(72, 142, 234, 0.9);
     height: auto;
+
     width: auto;
     transition: 0.1s;
     margin: 32px 25px;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
 
   }
