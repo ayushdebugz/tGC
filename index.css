@@ -4,12 +4,13 @@
 }
 
 html{
-    scroll-behavior: smooth; 
+    scroll-behavior:smooth;
 
 }
 
-.tracking-in-expand-fwd{animation:tracking-in-expand-fwd 2s cubic-bezier(.215,.61,.355,1.000) infinite alternate-reverse both}
-@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+.text-focus-in{animation:text-focus-in 3s cubic-bezier(.55,.085,.68,.53) }
+@keyframes text-focus-in{0%{filter:blur(17px);opacity:0}100%{filter:blur(0);opacity:1}}
+
 
 a {
     text-decoration: none;
@@ -41,6 +42,34 @@ a {
     cursor: pointer;
     font-size: 60px;
 }
+
+#s {
+    color: rgb(6, 222, 255)/*#A70D2A*/;
+    font-family: 'Jost';
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#t {
+    color: rgb(2, 255, 2)/*#A70D2A*/;
+    font-family: 'Jost';
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#v {
+    color: rgb(255, 2, 2)/*#A70D2A*/;
+    font-family: 'Jost';
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
 
 #f {
     padding: 14px;
@@ -93,6 +122,10 @@ nav ul li a {
     color: white
 }
 
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.2rem;
+}
 
 main hr {
     border: 0;
@@ -212,7 +245,7 @@ button {
 .container {
     display: inline-flexbox;
     background-color: rgb(70, 74, 77,0.5);
-    height: 180vh;
+    height: 170vh;
     justify-content: center;
    align-items: center;
 
@@ -256,7 +289,7 @@ img{
   .card2{
   
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(72, 142, 234, 0.5);
+    background-color: rgba(72, 234, 110, 0.2);
     height: auto;
     width: auto;
     transition: 0.1s;
@@ -266,6 +299,23 @@ img{
 
   }
 
+.card4{
+  
+    box-shadow:  5px 5px 20px rgb(240, 234, 234);
+    background-color: rgba(233, 4, 210, 0.2);
+    height: auto;
+    width: auto;
+    transition: 0.1s;
+    margin: 32px 25px;
+    border-radius: 0px;
+   
+
+  }
+
+  .card4:hover {
+  
+    box-shadow: 0 8px 16px 0 rgb(132, 0, 255);
+  }
 
   
   .card:hover {
@@ -275,31 +325,35 @@ img{
 
   .card1:hover {
   
-    box-shadow: 0 8px 16px 0 rgb(yellow);
+    box-shadow: 0 8px 16px 0 rgb(132, 0, 255);
   }
 
   .card2:hover {
   
-    box-shadow: 0 8px 16px 0 rgb(limegreen);
+    box-shadow: 0 8px 16px 0 rgb(72, 234, 110);
   }
 
-  .card3{
+  #card3{
   
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(72, 142, 234, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     height: auto;
 
     width: auto;
     transition: 0.1s;
     margin: 32px 25px;
     border-radius: 5px;
-    overflow: hidden;
+
 
   }
 
-  .card3:hover {
-  
-    box-shadow: 0 8px 16px 0 rgb(0, 174, 255);
-  }
 
-  
+
+/*.ut {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}*/
+
+.wobble-hor-bottom{animation:wobble-hor-bottom 2.5s infinite alternate-reverse both}
+@keyframes wobble-hor-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}}
