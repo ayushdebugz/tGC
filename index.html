@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <title>theGeekyChad ©</title>
     <link rel="icon" type="image/x-icon" href="GG.ico.ico">
@@ -13,25 +14,28 @@
 </head>
 
 <body>
- 
+
+<div id="loader"></div>
+<div id="content">
+
 	<script>
-		alert("You Are About To Re-Directed To AJ's Developer Portfolio ©!")
+		alert("Hang-On! Re-Directin' To AJ's Developer Portfolio ©!")
 	</script>
 
-<div id="home" class="div1">
+
+    <div id="home" class="div1">
 
     <header id="h">
         <nav>
-            <div class="left"> <span id = "q"><a href="#home"><span id="v">t</span>he<span id="s"><span id="v">G</span>eeky</span><span id="t"><span id="v">C</span>had</span> </a></span> <sup><b>©</b></sup></div>
-           
+            <div class="left"> <span id = "q"><a href="#home"><span id="v">t</span>he<span id="s"><span id="v">G</span>eeky</span><span id="t"><span id="v">C</span>had</span> </a></span></div>
+
             <div class="right">
                 <ul>
-                    <li><a href="#home"> <i class="fa-solid fa-house fa-shake fa-l" style="color: #ff0000;"></i></a></li>
-                    <li><a href="#about">  <i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"> </i> </a></li>
-                    <li><a href="#certi">  <i class="fa-solid fa-clipboard-check fa-bounce fa-l" style="color: aqua;"></i></a></li>
-                    <li><a href="#projects">  <i class="fa-solid fa-lightbulb fa-flip fa- l" style="color: #45fc03;"></i> </a></li>
+                    <li><a href="#home"><b>🏠</b><!--<i class="fa-solid fa-house fa-shake fa-l" style="color: #ff0000;"></i>--></a></li>
+                    <li><a href="#about"><i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"> </i></a></li>
+                    <li><a href="#certi"> <b>🏆</b> <!--<i class="fa-solid fa-clipboard-check fa-bounce fa-l" style="color: aqua;"></i>--></a></li>
+                    <li><a href="#projects"> <b>⚒️</b> <!--<i class="fa-solid fa-lightbulb fa-flip fa- l" style="color: #45fc03;"></i> </a>--></li>
                     
-                    <!--<li><a href="#card"><i class="fa-solid fa-address-card fa-beat  fa-l" style="color: #00ffff;"></i></a></li>-->
                 </ul>
             </div>
         </nav>
@@ -80,20 +84,20 @@
         
     </main>
 
-</div>
-<H1><marquee bgcolor = "red" width = "100%" behavior = "alterante"> ⚠️ WARNING: Portfolio Under Development... ProtoType- 2 ⚠️ </marquee></H1>
+    </div>
+    <H1><marquee bgcolor = "red" width = "100%" behavior = "alterante"> ⚠️ WARNING: Portfolio Under Development... ProtoType- 2 ⚠️ </marquee></H1>
 
-<br>
-<br>
+    <br>
+    <br>
 
-<div id="about" class="div2">
+    <div id="about" class="div2">
 
     <BR>
     <hr>
     <br>
 
     <BR>
-    <span id = "q" class="text-focus-in">  About Chad   <i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"></i></span><br><br>
+    <span id = "q" class="text-focus-in">  About Chad   <!--<i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"></i>--></span><br><br>
         <div class="container">
             <BR>
                 
@@ -162,13 +166,13 @@
             
 
         </div>
+        </div>
     </div>
-</div>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
 
-<div id="certi" class="div2">
+    <div id="certi" class="div2">
 
                 <br>
                 <hr>
@@ -177,7 +181,6 @@
                 <br>
                 <hr>
                 <BR>
-
 
 
 
@@ -222,15 +225,15 @@
                   <br>
                   <hr>
 
-</div>
+    </div>
 
 
-<div id="projects" class="div2">
+    <div id="projects" class="div2">
 
     LMAO
 
 
-</div>
+    </div>
 
 
 
@@ -285,5 +288,31 @@
             typeSpeed: 220,
         });
     </script>
+
+</div>
+<script>
+var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05);
+        }, 50);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(3.5);
+});
+</script>
 </body>
 </html>
