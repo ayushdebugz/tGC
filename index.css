@@ -172,10 +172,17 @@ main hr {
 
 
 
-.rightSection img {
-    width: 350px;
+.rightSection   {
+
     position:relative;
     overflow: visible;
+
+}
+
+.image-top {
+    width: 60%;
+    padding: 80px;
+    border-radius: 300px;
 
 }
 
