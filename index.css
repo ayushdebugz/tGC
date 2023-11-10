@@ -8,8 +8,18 @@ html{
 
 }
 
-.text-focus-in{animation:text-focus-in 3s cubic-bezier(.55,.085,.68,.53) }
+.text-focus-in{animation:text-focus-in 5s cubic-bezier(.55,.085,.68,.53) }
 @keyframes text-focus-in{0%{filter:blur(17px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.slide-in-elliptic-left-bck{animation:slide-in-elliptic-left-bck 1s linear 8s both}
+@keyframes slide-in-elliptic-left-bck{0%{transform:translateX(-800px) rotateY(-30deg) scale(6.5);transform-origin:200% 50%;opacity:0}100%{transform:translateX(0) rotateY(0) scale(1);transform-origin:-600px 50%;opacity:1}}
+
+.slide-in-elliptic-bottom-bck{animation:slide-in-elliptic-bottom-bck 1s cubic-bezier(.25,.46,.45,.94) 8s both}
+@keyframes slide-in-elliptic-bottom-bck{0%{transform:translateY(600px) rotateX(-30deg) scale(6.5);transform-origin:50% -100%;opacity:0}100%{transform:translateY(0) rotateX(0) scale(1);transform-origin:50% 500px;opacity:1}}
+
+.slide-in-elliptic-top-fwd{animation:slide-in-elliptic-top-fwd 1s cubic-bezier(.25,.46,.45,.94) 8s both}
+@keyframes slide-in-elliptic-top-fwd{0%{transform:translateY(-600px) rotateX(-30deg) scale(0);transform-origin:50% 100%;opacity:0}100%{transform:translateY(0) rotateX(0) scale(1);transform-origin:50% 1400px;opacity:1}}
+
 
 
 a {
@@ -22,15 +32,15 @@ a {
 
     text-align: center;
     top: 0;
-    padding: 38px;
+    padding: 86px;
     left: 0;
     width: 100%;
-    background-color: rgb(25,25,25);
+    background-color: rgb(28, 27, 27);
     color: whitesmoke;
     position: fixed;
     font-family: "Jost";
     z-index: 1;
-    font-size: 20px;
+    font-size: 100px;
 
 }
 
@@ -46,7 +56,6 @@ a {
 #s {
     color: rgb(2, 79, 90)/*#A70D2A*/;
     font-family: 'Jost';
-    text-align: center;
 
     cursor: pointer;
     font-size: 60px;
@@ -55,7 +64,7 @@ a {
 #t {
     color: rgb(4, 122, 4)/*#A70D2A*/;
     font-family: 'Jost';
-    text-align: center;
+
 
     cursor: pointer;
     font-size: 60px;
@@ -64,8 +73,9 @@ a {
 #v {
     color: rgba(175, 0, 0, 0.752)/*#A70D2A*/;
     font-family: 'Jost';
-    text-align: center;
-
+    text-align: left; 
+    padding: 0;
+    left: 0;
     cursor: pointer;
     font-size: 60px;
 }
@@ -96,11 +106,18 @@ a {
     font-family: Jost;
 }
 
+.df {
+    width: auto;
+    zoom: 200%;
+    height: auto;
+
+}
+
 body {
     display: flexbox;
-    background-image: url("f4.jpg");
+    background-image: url("ROAD.jpg");
     background-repeat: repeat-y;
-    /*background-color: rgb(37,37,37);*/   
+    /* background-color: rgb(37, 37, 36); */
     color: white;
     font-family: 'Jost', sans-serif;
 }
@@ -160,16 +177,14 @@ main hr {
 
 .leftSection {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("DEL.jpg");
+    background-repeat: repeat-Y;
+    background-image: url("AS.jpg");
     border-radius: 8px;
     padding: 20px 20px;
     background-color: #3a3a39;
     font-size: 30px;
-    color: aliceblue;
+    color: rgb(7, 18, 28);
 }
-
-
 
 
 .rightSection   {
@@ -179,7 +194,7 @@ main hr {
 
 }
 
-.image-top {
+.img {
     width: 60%;
     padding: 80px;
     border-radius: 300px;
@@ -286,7 +301,7 @@ img{
   }
   
   .card {
-    background-image: url("DEL.jpg");
+    background-image: url("f7.jpg");
     background-size: cover;
     color: rgb(255, 255, 255);
     box-shadow:  5px 5px 20px rgb(252, 249, 249);
@@ -301,10 +316,10 @@ img{
 
 
   .card1{
-    background-image: url("f2.jpg");
+    background-image: url("f3.jpg");
     background-size: cover;
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
-    background-color: rgba(132, 0, 255, 0.2);
+    background-color: rgb(4, 80, 46);
     height: auto;
     width: auto;
     transition: 0.1s;
@@ -315,12 +330,13 @@ img{
   }
 
   .card2{
-    background-image: url("DEL.jpg");
+    background-image: url("f4.jpg");
     background-size: cover;
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
     background-color: rgba(72, 234, 110, 0.2);
     height: auto;
     width: auto;
+    filter: brightness(75%);
     transition: 0.1s;
     margin: 32px 25px;
     border-radius: 0px;
@@ -329,7 +345,7 @@ img{
   }
 
 .card4{
-    background-image: url("f2.jpg");
+    background-image: url("DEL.jpg");
     background-size: cover;
     box-shadow:  5px 5px 20px rgb(240, 234, 234);
     background-color: rgba(233, 4, 210, 0.2);
@@ -387,3 +403,14 @@ img{
 
 .wobble-hor-bottom{animation:wobble-hor-bottom 2.5s infinite alternate-reverse both}
 @keyframes wobble-hor-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}}
+
+/* .htl {
+    height: 170px;
+    left: 0;
+    margin-top: -100px;
+    margin-left: 30px;
+    filter:brightness(90%);
+    background-color: #3a3a39;
+    width: 700px;
+    display: inline-flexbox;
+} */

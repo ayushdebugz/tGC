@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 	<link rel="stylesheet" href="index.css">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -26,20 +29,70 @@
     <div id="home" class="div1">
 
     <header id="h">
-        <nav>
+        <!-- <nav>
+
             <div class="left"> <span id = "q"><a href="#home"><span id="v">t</span>he<span id="s"><span id="v">G</span>eeky</span><span id="t"><span id="v">C</span>had</span> </a></span></div>
             
             <div class="right">
                 <ul>
-                    <li><a href="#home"><b>🏠</b><!--<i class="fa-solid fa-house fa-shake fa-l" style="color: #ff0000;"></i>--></a></li>
+                    <li><a href="#home"><b>🏠</b></a></li>
                     <li><a href="#about"><i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"> </i></a></li>
-                    <li><a href="#certi"> <b>🏆</b> <!--<i class="fa-solid fa-clipboard-check fa-bounce fa-l" style="color: aqua;"></i>--></a></li>
-                    <li><a href="#projects"> <b>⚒️</b> <!--<i class="fa-solid fa-lightbulb fa-flip fa- l" style="color: #45fc03;"></i> </a>--></li>
+                    <li><a href="#certi"> <b>🏆</b> </a></li>
+                    <li><a href="#projects"> <b>⚒️</b> </a></li>
                     
                 </ul>
             </div>
-        </nav>
-    </header>
+        </nav>  -->
+        <nav class="navbar navbar-dark bg-dark fixed-top fs-1" >
+            <div class="container-fluid fs-1">
+              
+              <!-- <a class="navbar-brand fs-1" href="#home"> <img src="B.jpeg" class="htl" alt=""> --> <h1><span id="v">t</span><span id="s">he</span><span id="v">G</span><span id="q">eeky</span><span id="v">C</span><span id="t">had</a></span></h1></a> <br>
+              <p>Since 2022...</p> <br>
+
+              <button class="navbar-toggler fs-1 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-1"></span>
+              </button>
+              <br>
+              <br>
+            
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navigation</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body my-3">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home"><h2>Home 🏠</h2></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#certi"> <h2>Certifications 🏆</h2></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h2>More...</h2> 
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#about">About ...🍺</a></li>
+                        <li><a class="dropdown-item" href="#proj"> Projects...🎯</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><h2>Coming Soon...</h2></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                 <!--   <input class="form-control me-2" type="search" placeholder= "<h2>Under Dev.</h2>" aria-label="Search">
+                   <button class="btn btn-success" type="submit"><h1>🔍</h1></button> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header> 
+    
+
 
     <main>
 
@@ -60,7 +113,9 @@
             
             </div>
             <div class="rightSection">
-                <img class="image-top" src="AJ.jpeg" alt="" >
+                <br>
+                <br>
+                <img class="text-focus-in" src="LORD3.1.png" alt="" >
                 <br>
                 <br>
                 <div class="buttons">
@@ -88,7 +143,7 @@
     </main>
 
     </div>
-    <H1><marquee bgcolor = "skyblue" width = "100%" behavior = "alterante"> ⚠️ WARNING: Portfolio Under Development... ProtoType- 3 ⚠️ </marquee></H1>
+    <H1><marquee bgcolor = "gray" width = "100%" behavior = "alterante"> ⚠️ WARNING: Portfolio Under Development... ProtoType- 3 ⚠️ </marquee></H1>
 
     <br>
     <br>
@@ -101,13 +156,13 @@
 
     <BR>
     <span id = "q" class="text-focus-in">  About Chad   <!--<i class="fa-solid fa-circle-info fa-beat fa-l" style="color: #fbcd04;"></i>--></span><br><br>
-        <div class="container">
+        
             <BR>
-                
-            <div class="card">
+          <div class="slide-in-elliptic-left-bck">
+            <div class="card" >
                 <br>
                 <br>
-                <h1><i class="fa-regular fa-user fa-beat fa-2xl" style="color: #00f583;"></i></h1>
+                <h1><i class="fa-regular fa-user fa-beat fa-2xl" style="color: #029852;"></i></h1>
                 <br>
                 <br>
                 <div id="j">
@@ -117,13 +172,16 @@
                 <div id="j">
                  👋 Hi! Ayush Jha Is, A 3rd Year B.C.A. (Bachelors In Computer Applications) Undergraduate @MIT -World Peace University.</div><br>
                 <br>
-                
             </div>
+          </div>
+           
             <BR>
+            <br>
+          <div class="slide-in-elliptic-bottom-bck">
             <div class="card1">
                 <br>
                 <br>
-                <h1><i class="fa-solid fa-address-card fa-beat-fade fa-2xl" style="color: #003b45;"></i></h1>
+                <h1><i class="fa-solid fa-address-card fa-beat-fade fa-2xl" style="color: #f3eb03;"></i></h1>
                 <br>
                 <br>
                 <div id="j">
@@ -137,11 +195,12 @@
                     <br>
                 <div id="j">    🎯 Attended TEDx @MIT-WPU On 7th May, 2022. </div><br>
                     <br>
-               
             </div>
-            </div>
+          </div>
+        
             <BR>
             <br>
+          <div class="slide-in-elliptic-top-fwd">
             <div class="card2">
                     <br>
                     <br>
@@ -153,7 +212,7 @@
                     </div>
                     <br>
                     <div id="j">
-                        🎯 Currently A Front- End Web Developer As Primary Profession. </div><br>
+                        🎯 Currently A Full-Stack Web Developer As Primary Profession. </div><br>
                      <div id="j">
                         🎯Part-Time Options Trader.  Trades Basically ON Commodities And Currency Pairs, <br> Annual P/L : INR 25-35K /- </div><BR>
                     <div id="j">
@@ -162,8 +221,10 @@
                     <br>
                     
             </div>
+          </div>
             <br>
             <br>
+          <div class="slide-in-elliptic-left-bck">
             <div class="card4">
                 <br>
                 <br>
@@ -181,13 +242,12 @@
 
 		        <br>
                 <br>
-        </div>
+            </div>
+          </div>
 
-            
-
-        </div>
-        </div>
+        
     </div>
+</div>
     <br>
     <br>
     <br>
@@ -249,56 +309,21 @@
 </div>
 
     <div id="projects" class="div2">
-
-    LMAO
-
-
+    <!-- <div class="card4">
+      <iframe class = "df" src ="https://ayushdebugz.github.io/tGCQG/" frameborder="0"></iframe>
     </div>
 
+    </div> -->
 
 
 
-    <footer id="f">
-        Copyrights ©  theGeekyChad   |   2023    |  An AJ's Initiative
-    </footer>
 
+<footer id="f">
+    Copyrights ©  theGeekyChad   |   <?php $year = date("Y"); echo $year; ?>   |  An AJ's Initiative
+</footer>
 
-    <!--<footer >
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Developer Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li> Worl 
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-rights">
-            Copyright &#169; theAyu5hJha.co.in | All Rights Reserved
-        </div>
-    </footer>
--->
+        <br>
+    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
     </script>
     <!-- Setup and start animation! -->
@@ -309,7 +334,6 @@
         });
     </script>
 
-</div>
 <script>
 var loader;
 
