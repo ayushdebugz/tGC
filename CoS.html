@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coming Soon ... </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Kalam:wght@300&display=swap');
+
+body {
+    font-family: 'Jost';
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.countdown-container {
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.countdown-item {
+    display: inline;
+    margin: 0 10px;
+    font-size: 5em;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color:teal;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: rgb(0, 19, 19);
+}
+
+#q {
+    color: rgb(255, 255, 255)/*#A70D2A*/;
+    font-family: 'Jost';
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#s {
+    color: rgb(252, 252, 252)/*#A70D2A*/;
+    font-family: 'Jost';
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#t {
+    color: rgb(255, 255, 255)/*#A70D2A*/;
+    font-family: 'Jost';
+
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#v {
+    color: rgba(255, 255, 255, 0.752)/*#A70D2A*/;
+    font-family: 'Jost';
+    text-align: left; 
+    padding: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 60px;
+}
+
+#h {
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+<!-- <div id="h">
+<span id="v">t</span><span id="s">he</span><span id="v">G</span><span id="q">eeky</span><span id="v">C</span><span id="t">had</a></span></a> <br>
+</div> -->
+<br>
+<br>
+
+    <div class="countdown-container">
+        <div id="days" class="countdown-item"></div>
+        <div id="hours" class="countdown-item"></div>
+        <div id="minutes" class="countdown-item"></div>
+        <div id="seconds" class="countdown-item"></div>
+        <div id="message"><h1>New Book Publishing Soon!</h1> </div>
+        <br>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 8, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("days").innerHTML = days + "d";
+            document.getElementById("hours").innerHTML = hours + "h";
+            document.getElementById("minutes").innerHTML = minutes + "m";
+            document.getElementById("seconds").innerHTML = seconds + "s";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("message").innerHTML = "It's here!";
+            }
+        }, 1000);
+    </script>
+<br>
+</body>
+</html>
