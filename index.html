@@ -323,11 +323,15 @@
             typeSpeed: 220,
         });
     </script> -->
-<script>
+ <script>
         function startTypedAnimation() {
             var typed = new Typed('#element', {
                 strings: ['<b>#Web Developer</b>', '<b>#Binary Options-Trader</b>', '<b>#Game Dev.</b>', '<b>#Tech. Enthusiast</b>'],
                 typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 1000,
+                startDelay: 500,
+                showCursor: false,
                 onComplete: function () {
                     typed.reset();
                     startTypedAnimation(); // Restart the animation
@@ -336,7 +340,7 @@
         }
 
         startTypedAnimation(); // Initial start
-</script>
+    </script>
 
 
 <script>
