@@ -116,7 +116,7 @@ a {
 body {
     display: flexbox;
     background-image: url("f2.jpg");
-    background-repeat: repeat-y,repeat-x;
+    background-repeat: repeat;
     color: white;
     font-family: 'Jost', sans-serif;
 }
