@@ -27,6 +27,9 @@ a {
     color: gold;
 }
 
+#nr {
+	background-color: rgb(25,25,48);
+}
 
 #h {
 
@@ -116,7 +119,8 @@ a {
 body {
     display: flexbox;
     background-image: url("f2.jpg");
-    background-repeat: repeat;
+/*     background-repeat: repeat; */
+	background-size: cover;
     color: white;
     font-family: 'Jost', sans-serif;
 }
