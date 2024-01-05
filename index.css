@@ -115,9 +115,9 @@ a {
 
 body {
     display: flexbox;
-    /* background-image: url("AS.jpg"); */
+    background-image: url("f4.jpg");
     background-repeat: repeat-y;
-    background-color: rgb(9, 10, 37);
+/*     background-color: rgb(9, 10, 37); */
     color: white;
     font-family: 'Jost', sans-serif;
 }
