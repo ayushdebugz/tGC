@@ -328,13 +328,15 @@
             var typed = new Typed('#element', {
                 strings: ['<b>#Web Developer</b>', '<b>#Binary Options-Trader</b>', '<b>#Game Dev.</b>', '<b>#Tech. Enthusiast</b>'],
                 typeSpeed: 100,
-                backSpeed: 50,
+                backSpeed: 80,
                 backDelay: 1000,
                 startDelay: 500,
                 showCursor: false,
                 onComplete: function () {
-                    typed.reset();
-                    startTypedAnimation(); // Restart the animation
+                    setTimeout(function () {
+                        typed.reset();
+                        startTypedAnimation(); // Restart the animation
+                    }, 1000); // Adjust the delay as needed
                 }
             });
         }
