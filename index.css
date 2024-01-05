@@ -29,6 +29,17 @@ a {
 
 #nr {
 	background-color: rgb(25,25,48);
+	text-align: center;
+    top: 0;
+    padding: 86px;
+    left: 0;
+    width: 100%;
+    color: gold;
+    position: fixed;
+    font-family: "Jost";
+    z-index: 1;
+    font-size: 100px;
+
 }
 
 #h {
