@@ -28,7 +28,7 @@ a {
 }
 
 #nr {
-	background-color: rgb(25,25,48);
+	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
     top: 0;
     padding: 86px;
@@ -59,10 +59,9 @@ a {
 }
 
 #q {
-    color: cyan;
+    color: rgb(255, 0, 43);
     font-family: 'Jost';
     text-align: center;
-
     cursor: pointer;
     font-size: 60px;
 }
@@ -129,9 +128,11 @@ a {
 
 body {
     display: flexbox;
-    background-image: url("f2.jpg");
-/*     background-repeat: repeat; */
-	background-size: cover;
+    /* background: rgb(238,164,127); */
+    /* background: linear-gradient(90deg, rgba(238,164,127,1) 0%, rgba(47,60,126,1) 100%); */
+    background-image: url("BG.jpg");
+    /* background-repeat: repeat-y; */
+	background-size:auto;
     color: white;
     font-family: 'Jost', sans-serif;
 }
@@ -197,11 +198,15 @@ main hr {
     font-weight: bold;
     border-radius: 8px;
     padding: 20px 20px;
-    background-color: rgba(255, 99, 71, 0.7);
+    background: linear-gradient(90deg, rgba(255, 217, 0, 0.849) 0%, rgb(251, 253, 143) 100%);
     font-size: 30px;
     color: rgb(0, 0, 0)
 }
 
+.mk {
+    font-size: 18px;
+    text-align: left;
+}
 
 .rightSection   {
 
@@ -283,12 +288,12 @@ button {
 @keyframes slide-top{0%{transform:translateX(0)}100%{transform:translateX(50px)}}
 
 .div1 {
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(0, 119, 255);
     padding: 32px;
 }
 
 .div2 {
-    border:5px solid rgb(255, 255, 255);
+    border:5px solid rgb(0, 119, 255);
     padding: 32px;
     font-size: 20px;
     text-align: center;
@@ -299,14 +304,14 @@ button {
     width:auto;
 }*/
 
-.container {
+/* .container {
     display: inline-flexbox;
     background-color: rgba(255, 255, 255, 0.5);
     height: auto;
     justify-content: center;
-   align-items: center;
+    align-items: center;
 
-}
+} */
 
 img{
     width: 100%;
@@ -438,4 +443,106 @@ img{
     font-size: 9px;
     font-family: Jost;
     font-weight: lighter;
+}
+
+/* #about {
+
+    padding: 90px 50px;
+
+} */
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .about-col-1 {
+    flex-basis: 30%
+} */
+/* 
+.about-col-1 img {
+    width: 60%;
+
+    
+} */
+
+.about-col-2 {
+    /* flex-basis: 100%; */
+    width: 120%;
+    zoom: 160%;
+
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.tab-tiles {
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 48px;
+    font-weight: 1000;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 6px;
+    background: darkcyan;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.9s;
+
+}
+
+.tab-links.active-link::after {
+    width: 60%;
+
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+.tab-contents ul li span{
+    list-style: none;
+    margin: 10px 0;
+    color: darkcyan;
+    
+}
+
+.tab-contents {
+    display: none;
+
+}
+
+.tab-contents.active-tab {
+    display: block;
+
+}
+
+#opd {
+    background-color: rgb(0, 50, 66);
+    width: auto;
+    border-radius: 12px;
+
+
+    display: inline-flexbox;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon ... </title>
+    <link rel="stylesheet" href="index.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Kalam:wght@300&display=swap');
 
@@ -12,9 +13,11 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
+    
 }
 
 .countdown-container {
@@ -25,24 +28,25 @@ body {
 
 .countdown-item {
     display: inline;
-    margin: 0 10px;
+    margin: 0 12px;
     font-size: 5em;
     height: auto;
     width: auto;
     padding: 10px;
-    background-color:teal;
-    color: #fff;
+    background-color: wheat;
+    color: #000000;
     border-radius: 5px;
 }
 
 #message {
     font-size: 1.5em;
     margin-top: 20px;
-    color: rgb(0, 19, 19);
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 #q {
-    color: rgb(255, 255, 255)/*#A70D2A*/;
+    color: rgb(255, 0, 0)/*#A70D2A*/;
     font-family: 'Jost';
     text-align: center;
 
@@ -51,7 +55,7 @@ body {
 }
 
 #s {
-    color: rgb(252, 252, 252)/*#A70D2A*/;
+    color: rgb(0, 0, 0)/*#A70D2A*/;
     font-family: 'Jost';
 
     cursor: pointer;
@@ -59,7 +63,7 @@ body {
 }
 
 #t {
-    color: rgb(255, 255, 255)/*#A70D2A*/;
+    color: rgb(0, 140, 255)/*#A70D2A*/;
     font-family: 'Jost';
 
 
@@ -68,7 +72,7 @@ body {
 }
 
 #v {
-    color: rgba(255, 255, 255, 0.752)/*#A70D2A*/;
+    color: rgba(5, 143, 0, 0.752)/*#A70D2A*/;
     font-family: 'Jost';
     text-align: left; 
     padding: 0;
@@ -77,17 +81,32 @@ body {
     font-size: 60px;
 }
 
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
 #h {
     top: 0;
     left: 0;
     text-align: center;
 }
+
+.jk {
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+}
     </style>
 </head>
 <body>
-<!-- <div id="h">
-<span id="v">t</span><span id="s">he</span><span id="v">G</span><span id="q">eeky</span><span id="v">C</span><span id="t">had</a></span></a> <br>
-</div> -->
+    <h1 class="jk"><span id="v">t</span><span id="s">he</span><span id="v">G</span><span id="q">eeky</span><span id="v">C</span><span id="t">had</a></span></h1></a> <br>
+    <p class="jk">Since 2022...</p> <br>
+    <div class="image-container">
+        <img src="BookT.png" alt="Book Cover Image" style="width: 100%; height: auto;">
+    </div>
 <br>
 <br>
 
@@ -101,7 +120,7 @@ body {
     </div>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Feb 8, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Feb 8, 2025 00:00:00").getTime();
 
         // Update the countdown every 1 second
         var x = setInterval(function() {
