@@ -119,6 +119,18 @@ a {
     font-family: Jost;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    filter: brightness(200%);
+    z-index: -1;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+
 .df {
     width: auto;
     zoom: 200%;
@@ -130,7 +142,7 @@ body {
     display: flexbox;
     /* background: rgb(238,164,127); */
     /* background: linear-gradient(90deg, rgba(238,164,127,1) 0%, rgba(47,60,126,1) 100%); */
-    background-image: url("BG.jpg");
+    /* background-image: url("BG.jpg"); */
     /* background-repeat: repeat-y; */
 	background-size:auto;
     color: white;
